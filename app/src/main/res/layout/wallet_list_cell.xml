@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:background="@color/lightGreyAlmostWhite"
+    >
+
+    <FrameLayout
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/wallet_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/wallet_hours"
+        android:layout_marginStart="16dp"
+        android:layout_centerVertical="true"
+        android:lineSpacingExtra="2sp"
+        android:textStyle="bold"
+        android:textColor="@color/darkText"
+        android:textSize="13sp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_marginEnd="4dp"
+        tools:text="Wallet Name" />
+
+    <TextView
+        android:id="@+id/wallet_hours"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/wallet_balance"
+        android:textColor="@color/darkGreyText"
+        android:gravity="start"
+        android:maxLines="1"
+        android:textSize="13sp"
+        tools:text="SKY Hours" />
+
+    <TextView
+        android:id="@+id/wallet_balance"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/chevron"
+        android:layout_centerVertical="true"
+        android:maxLines="1"
+        android:gravity="end"
+        android:text="@string/balance_heading"
+        android:textColor="@color/darkText" />
+
+    <ImageView
+        android:id="@+id/chevron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/chevron_right" />
+
+
+    <LinearLayout
+        android:id="@+id/buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/new_wallet_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_new_wallet"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:text="@string/wallet_heading_new"
+            android:textColor="#801E2227" />
+
+        <TextView
+            android:id="@+id/load_wallet_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:drawableLeft="@drawable/icon_load_wallet"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:text="@string/wallet_heading_load"
+            android:textColor="#801E2227" />
+
+    </LinearLayout>
+
+    <View android:id="@+id/bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/wallet_list_divider" />
+
+</RelativeLayout>

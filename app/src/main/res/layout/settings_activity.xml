@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:background="@color/darkerLightBackground"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="@string/settings_heading"
+            android:textColor="#1E2227"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/transparentDarkBackground" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/app_info_heading"
+                        android:textColor="@color/darkText"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:text="App info" />
+
+                    <TextView
+                        android:id="@+id/versionName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/darkText"
+                        android:textSize="12sp"
+                        tools:text="Version: 1.02 (3) (debug)" />
+
+                    <TextView
+                        android:id="@+id/backendVersion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/darkText"
+                        android:textSize="12sp"
+                        tools:text="Backend node min. version: 0.23" />
+
+                    <TextView
+                        android:id="@+id/dbVersion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@color/darkText"
+                        android:textSize="12sp"
+                        tools:text="DB version: 1" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/transparentDarkBackground" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp">
+
+                    <TextView
+                        android:id="@+id/url_heading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="24dp"
+                        android:padding="8dp"
+                        android:text="@string/node_url"
+                        android:textColor="@color/darkText"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/url_text"
+                        style="@style/editTextWhiteBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/url_heading"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/rounded_white_rect_with_border"
+                        android:hint="@string/url_hint"
+                        android:inputType="textUri"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:padding="12dp" />
+
+                    <Button
+                        android:id="@+id/restore_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/url_text"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="42dp"
+                        android:background="@drawable/button_inactive_gray"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:text="@string/restore_default"
+                        android:textColor="@color/darkAlmostBlack"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/query_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/url_text"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/sk_button"
+                        android:text="@string/query_node"
+                        android:textColor="@drawable/sk_button_text_color"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/node_loading_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ProgressBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="16dp"
+                            android:indeterminate="true"
+                            android:textColor="@color/darkText"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/node_info_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/node_info_heading"
+                            android:textColor="@color/darkText"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            tools:text="Node info" />
+
+                        <TextView
+                            android:id="@+id/coin_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/darkText"
+                            android:textSize="12sp"
+                            tools:text="Supported coin: skycoin" />
+
+                        <TextView
+                            android:id="@+id/node_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:textColor="@color/darkText"
+                            android:textSize="12sp"
+                            tools:text="Node version: 0.25" />
+
+                        <TextView
+                            android:id="@+id/ch_burn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginBottom="8dp"
+                            android:textColor="@color/darkText"
+                            android:textSize="12sp"
+                            tools:text="50%" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/transparentDarkBackground" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="24dp">
+
+                    <Button
+                        android:id="@+id/pin_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/sk_button"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="24dp"
+                        android:text="@string/change_pin"
+                        android:textColor="@drawable/sk_button_text_color"
+                        android:textSize="12sp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/button_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/transparentDarkBackground" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_inactive_gray"
+                    android:text="@string/cancel"
+                    android:textColor="@color/darkAlmostBlack" />
+
+                <Button
+                    android:id="@+id/save_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sk_button"
+                    android:text="@string/save"
+                    android:textColor="@drawable/sk_button_text_color" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

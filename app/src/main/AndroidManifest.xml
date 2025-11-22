@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+            android:allowBackup="false"
+            android:icon="@mipmap/cloud_launcher"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:name=".SkycoinApplication"
+            android:theme="@style/AppTheme">
+        <activity android:name="com.skycoin.wallet.StartActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+                android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="skycoin" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".onboarding.OnboardingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name="com.skycoin.wallet.home.HomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name="com.skycoin.wallet.send.OcrCaptureActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.skycoin.wallet.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name="com.skycoin.wallet.send.AdvancedSendActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+    </application>
+
+</manifest>

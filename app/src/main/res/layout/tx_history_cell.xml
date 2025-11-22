@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGreyAlmostWhite"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/send_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"
+            android:src="@drawable/send_blue" />
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkText"
+                    android:layout_marginStart="6dp"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:text="Sent SKY" />
+
+                <TextView
+                    android:id="@+id/heading_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:textSize="10sp"
+                    android:textColor="@color/lightGreyText"
+                    tools:text="Yesterday" />
+
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/qr_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="center"
+                    android:src="@drawable/qr_code_black" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:textColor="@color/darkGreyText"
+                    android:textSize="13sp"
+                    tools:text="02fg234fg234g234gh234ghhj234jh234jh234" />
+
+            </LinearLayout>
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tx_hours_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/darkGreyText"
+                    android:layout_marginStart="6dp"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:text="@string/hours"
+                    tools:text="Sent CH" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical"
+            android:gravity="top|end"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/amount_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:gravity="end"
+                tools:text="Line 1"
+                android:textColor="@color/darkText"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/fiat_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:gravity="end"
+                tools:text="Line 2"
+                android:textColor="@color/darkGreyText"
+                android:textSize="13sp" />
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end|center_vertical"
+                android:layout_gravity="end"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/burn_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="16"
+                    android:textColor="@color/darkText"
+                    android:textSize="10sp" />
+
+                <ImageView android:id="@+id/burn_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="-2dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/fire_18"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkerBackgroundDivider" />
+
+</LinearLayout>

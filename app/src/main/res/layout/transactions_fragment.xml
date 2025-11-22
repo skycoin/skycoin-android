@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".home.TransactionsFragment">
+
+    <FrameLayout android:background="@drawable/blue_gradient"
+        android:layout_width="match_parent"
+        android:paddingTop="0dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:src="@drawable/skycoin_blue_header"/>
+
+        <TextView android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/almostWhiteText"
+            android:text="@string/transactions"/>
+
+        <ImageView
+            android:id="@+id/refresh_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/refresh" />
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/transactions_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        android:background="@color/darkerLightBackground"/>
+
+</LinearLayout>

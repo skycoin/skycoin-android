@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <RelativeLayout android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_gradient"
+        >
+
+        <TextView
+            android:id="@+id/main_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/advanced_send"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/main_heading"
+            android:layout_marginTop="16dp"
+            android:text="@string/advanced_send_info_text_3"
+            android:lineSpacingExtra="4sp"
+            android:textSize="12sp"/>
+
+        <RelativeLayout
+            android:id="@+id/pool_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info_text"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/fiat_background"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/pool_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/pool_available_sky"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pool_balance_text"
+                tools:text="128.5 SKY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/pool_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pool_balance"
+                android:layout_margin="8dp"
+                android:text="@string/pool_available_hours"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pool_hours_text"
+                tools:text="23.7K SKY Hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/pool_balance"
+                android:layout_margin="8dp"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/address_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/pool_info"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="4dp"
+            android:text="@string/send_to"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/address_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_heading"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/address_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                style="@style/editTextWhiteBox"
+                android:background="@drawable/rounded_white_rect_with_border"
+                android:hint="@string/sky_address_hint"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="12dp" />
+
+            <ImageView
+                android:id="@+id/qr_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="8dp"
+                android:src="@drawable/qr_code_black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/amount_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/address_container"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/send_heading"
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:id="@+id/amount_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/fiat_preview"
+            android:layout_below="@+id/amount_heading"
+            android:layout_marginTop="0dp"
+            style="@style/editTextWhiteBox"
+            android:background="@drawable/rounded_white_rect_with_border"
+            android:hint="@string/sky_amount_hint"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="12dp" />
+
+        <TextView android:id="@+id/fiat_preview"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/amount_heading"
+            android:layout_alignBaseline="@+id/amount_text"
+            android:textSize="12sp"
+            android:lines="2"
+            android:maxLines="2"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentEnd="true"
+            tools:text="$18.40"/>
+
+        <TextView
+            android:id="@+id/hours_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/amount_text"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/send_hours_heading"
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:id="@+id/hours_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/hours_heading"
+            android:layout_marginTop="0dp"
+            style="@style/editTextWhiteBox"
+            android:background="@drawable/rounded_white_rect_with_border"
+            android:hint="@string/sky_amount_hint"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="12dp" />
+
+
+        <TextView
+            android:id="@+id/change_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/hours_text"
+            android:layout_marginTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="@string/change_address"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/change_addr_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/change_heading"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rounded_white_rect_with_border"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/note_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/change_addr_selector"
+            android:text="@string/send_note"
+            android:paddingBottom="4dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12sp" />
+
+
+        <EditText
+            android:id="@+id/note_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/note_heading"
+            style="@style/editTextWhiteBox"
+            android:background="@drawable/rounded_white_rect_with_border"
+            android:hint="@string/send_note"
+            android:inputType="text"
+            android:lines="2"
+            android:maxLines="2"
+            android:minLines="1"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/prev_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/note_text"
+            android:layout_marginTop="24dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/darkAlmostBlack"
+            android:background="@drawable/button_inactive_gray"
+            android:textSize="10sp"
+            android:text="@string/go_back" />
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/note_text"
+            android:layout_marginTop="24dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@drawable/sk_button_text_color"
+            android:background="@drawable/sk_button"
+            android:textSize="10sp"
+            android:text="@string/send" />
+
+    </RelativeLayout>
+</ScrollView>

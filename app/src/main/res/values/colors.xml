@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#0072FF</color>
+    <color name="blueTransparent">#330072FF</color>
+
+    <color name="darkAlmostBlack">#1E2227</color>
+    <color name="transparentDarkBackground">#0D1E2227</color>
+
+    <color name="lightGreyAlmostWhite">#FBFBFB</color>
+    <color name="darkerLightBackground">#F7F7F7</color>
+    <color name="darkerBackgroundDivider">#F0F0F0</color>
+
+    <color name="wallet_list_divider">#EFF0F0</color>
+
+    <color name="reminder_red">#FF004E</color>
+
+    <color name="darkText">#1E2227</color>
+    <color name="darkTextSemiTrans">#CC1E2227</color>
+    <color name="darkGreyText">#801E2227</color>
+    <color name="lightGreyText">#331E2227</color>
+    <color name="almostWhiteText">#FAFAFA</color>
+    <color name="almostWhiteTextTransparent">#80FAFAFA</color>
+    <color name="darkGreyTransparent">#1AF0F0F0</color>
+
+    <color name="transparentWhite">#19FFFFFF</color>
+
+    <color name="fiatTextColor">#171A1D</color>
+    <color name="whiteEditTextColor">#CC171A1D</color>
+
+    <color name="textWhite">#FFFFFF</color>
+
+    <color name="qrCodeWhite">#FFFFFF</color>
+    <color name="qrCodeBlack">#000000</color>
+
+    <color name="wallet_balance_blue">#21c4fc</color>
+
+    <color name="transparent_blue">#5521c4fc</color>
+
+</resources>

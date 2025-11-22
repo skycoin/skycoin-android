@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <RelativeLayout android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_gradient"
+        >
+
+        <TextView
+            android:id="@+id/main_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/advanced_send"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/main_heading"
+            android:layout_marginTop="16dp"
+            android:text="@string/advanced_send_info_text_1"
+            android:lineSpacingExtra="4sp"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/wallet_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/info_text"
+            android:layout_marginTop="24dp"
+            android:text="@string/select_wallet"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/wallet_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wallet_heading"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rounded_white_rect_with_border"
+            android:spinnerMode="dropdown" />
+
+
+        <RelativeLayout
+            android:id="@+id/pool_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wallet_selector"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/fiat_background"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/pool_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/pool_selected_sky"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pool_balance_text"
+                tools:text="128.5 SKY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/pool_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pool_balance"
+                android:layout_margin="8dp"
+                android:text="@string/pool_selected_hours"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pool_hours_text"
+                tools:text="23.7K SKY Hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/pool_balance"
+                android:layout_margin="8dp"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/address_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/pool_info"
+            android:layout_marginTop="16dp"
+            android:text="@string/select_addresses"
+            android:textSize="12sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/address_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_heading"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_white_rect_with_border"></android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/address_list"
+            android:layout_marginTop="24dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/darkAlmostBlack"
+            android:background="@drawable/button_inactive_gray"
+            android:textSize="10sp"
+            android:text="@string/cancel" />
+
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/address_list"
+            android:layout_marginTop="24dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@drawable/sk_button_text_color"
+            android:background="@drawable/sk_button"
+            android:textSize="10sp"
+            android:text="@string/next" />
+
+    </RelativeLayout>
+</ScrollView>

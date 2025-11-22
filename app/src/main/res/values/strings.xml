@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">Skycoin</string>
+
+    <string name="currency_name">Skycoin</string>
+    <string name="currency_short">SKY</string>
+    <string name="hours_name">Coin Hours</string>
+    <string name="hours">HOURS</string>
+
+    <string name="disclaimer_title">Disclaimer</string>
+    <string name="disclaimer_text">By continuing, you understand the risks related to the use of cryptographic tokens &amp; blockchain-based software, the Skycoin mobile wallet, and the Skycoin cryptocurrency. You understand that this product is provided as-is, and agree to the Terms and Conditions governing the usage of this product.</string>
+    <string name="disclaimer_checkbox">Yeah, I understand</string>
+    <string name="disclaimer_button">Continue</string>
+
+    <string name="seed_reminder_heading">Safeguard your seed!</string>
+    <string name="seed_reminder_message">We want to make sure that you wrote down your seed and stored it in a safe place. If you forget your seed, you WILL NOT be able to recover your Skycoin wallet!</string>
+    <string name="seed_reminder_checkbox">It\'s safe, I swear.</string>
+
+    <string name="pin_heading_choose">Set a PIN</string>
+    <string name="pin_heading_confirm">Confirm PIN</string>
+    <string name="pin_heading_enter">Enter PIN</string>
+    <string name="pin_choose_message">This PIN will used to open the wallet. Don\'t forget it; if you do, you may lose access to your mobile wallet.</string>
+    <string name="pin_confirm_message">Enter your PIN once more to continue.</string>
+    <string name="pin_mismatch_heading">Oops!</string>
+    <string name="pin_mismatch_message">The PINs did not match.</string>
+    <string name="pin_mismatch_ok">Try again</string>
+    <string name="pin_heading_interrogate">Enter your PIN to access the wallet</string>
+    <string name="pin_request_pin_for_sending">Enter your PIN to complete the transaction</string>
+    <string name="pin_request_pin">Enter your PIN to continue</string>
+
+    <string name="wallet_heading">Create a Wallet</string>
+    <string name="wallet_message">If you don\'t yet have a wallet, generate a seed and we\'ll create one for you. If you already have a wallet, enter the seed below and load it.</string>
+    <string name="wallet_name_heading">Name</string>
+    <string name="wallet_seed_heading">Seed</string>
+    <string name="wallet_seed_confirm">Confirm seed</string>
+    <string name="wallets_list_heading">Wallets</string>
+    <string name="wallets_show_seed">Enter PIN to view wallet seed</string>
+
+
+    <string name="wallet_heading_new">New Wallet</string>
+    <string name="wallet_heading_load">Load Wallet</string>
+
+    <string name="qr_heading">Create QR Code</string>
+    <string name="qr_encode_error">One or more fields could not be encoded correctly</string>
+
+    <string name="send_heading">Send SKY</string>
+    <string name="send_dash">\u2014</string>
+    <string name="send_from">Send from</string>
+    <string name="send_to">Send to</string>
+    <string name="send_amount">Amount</string>
+    <string name="send_hours_heading">Send Coin Hours</string>
+    <string name="send_note">Notes</string>
+    <string name="select_addresses">Select Addresses</string>
+    <string name="select_utxos">Select UTXOs</string>
+    <string name="pool_selected_sky">Selected SKY:</string>
+    <string name="pool_selected_hours">Selected Coin Hours:</string>
+    <string name="pool_selected_utxo_pool_balance">Total SKY to spend:</string>
+    <string name="pool_selected_utxo_pool_hours">Total Coin Hours to spend:</string>
+    <string name="pool_selected_utxo_pool_hours_burn">Coin Hours burned:</string>
+    <string name="pool_selected_utxo_pool_hours_sent">Coin Hours to send:</string>
+    <string name="change_address">Change Address</string>
+    <string name="pool_available_sky">Max send SKY:</string>
+    <string name="pool_available_hours">Max send Coin Hours:</string>
+    <string name="select_wallet">Select wallet</string>
+
+    <string name="tx_sent_sky">Sent SKY</string>
+    <string name="tx_sending_sky">Sending SKY</string>
+    <string name="tx_recv_sky">Received SKY</string>
+
+    <string name="time_nice_later">Later</string>
+    <string name="time_nice_justnow">Just now</string>
+    <string name="time_nice_today">Today</string>
+    <string name="time_nice_yesterday">Yesterday</string>
+
+    <string name="transactions">Transactions</string>
+
+    <string name="balance_heading">Balance</string>
+    <string name="wallet">Wallet</string>
+    <string name="address">Address</string>
+    <string name="id">ID</string>
+    <string name="sent_sky">Sent SKY</string>
+    <string name="received_sky">Received SKY</string>
+    <string name="encoded_qr_heading">QR data:</string>
+
+    <string name="qr_max_amount">Max 13 digits amount (including decimal point)</string>
+    <string name="qr_max_hours">Max 9 digits hours</string>
+    <string name="qr_max_message">Max 32 characters message</string>
+    <string name="qr_bad_format">Bad number input</string>
+
+    <string name="seed">Seed</string>
+    <string name="new_seed">New Seed</string>
+    <string name="seed_duplicate">There is already a wallet with this seed</string>
+    <string name="no_seed">You must provide a wallet seed</string>
+    <string name="seed_no_match">Seed and confirmation text do not match</string>
+
+    <string name="date">Date</string>
+    <string name="status">Status</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="notes">Notes</string>
+    <string name="send">Send</string>
+    <string name="advanced_send">Advanced Send</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="next">Next</string>
+    <string name="update_qr">Update QR</string>
+    <string name="request_amount">Request Amount</string>
+    <string name="request_amount_hint">Coins to request</string>
+    <string name="request_hours">Request Hours</string>
+    <string name="request_hours_hint">Hours to request</string>
+    <string name="request_message">Message</string>
+    <string name="request_message_hint">Message for the sender</string>
+
+
+    <string name="go_back">Go Back</string>
+    <string name="save">Save</string>
+    <string name="restore_default">Restore to default</string>
+    <string name="query_node">Test Node</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="pin_type_4">4-digit PIN</string>
+    <string name="pin_type_6">6-digit PIN</string>
+
+    <string name="advanced_send_info_text_1">STEP 1: Choose wallet, then select 1 or more addresses you want to send from.</string>
+    <string name="advanced_send_info_text_2">STEP 2: Choose which UTXOs you want to send. When you complete the transaction they will be consumed and any remaining change will be sent to your selected change address.</string>
+    <string name="advanced_send_info_text_3">Step 3: Configure how your selected pool of SKY and Hours should be sent. Choose the amount of SKY to send and which address to send it to. Then choose how much of the available Coin Hours to send along. Finally, select wich of your wallet addresses should receive any remaining change. NOTE: if you send all coins and keep no change, you will automatically send all coin hours.</string>
+
+    <string name="send_no_hours_warning">You are sending 0 coin hours, are you sure?</string>
+    <string name="keep_no_hours_warning">You are keeping 0 coin hours, are you sure?</string>
+
+    <string name="confirmed">Confirmed</string>
+    <string name="pending">Pending</string>
+    <string name="ok">OK</string>
+    <string name="copied">Copied to clipboard</string>
+    <string name="copy_tx_to_clipboard">Copy txid to clipboard</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="send_success">Send success</string>
+    <string name="no_camera_access">Can\'t access camera</string>
+
+    <string name="error">Error</string>
+    <string name="error_send">Send error</string>
+    <string name="error_retrofit">Network error. Check your Node url on Settings screen</string>
+    <string name="error_network">Network error. Check your internet connection.</string>
+    <string name="error_load_node_rules">Could not load Node rules.</string>
+    <string name="error_load_node_rules_warning">Could not load Node rules. Hours Burned may be non-optimal.</string>
+    <string name="error_transaction_failed">Transaction failed</string>
+    <string name="error_too_many_decimals">Too many decimals, max allowed is %1$d</string>
+    <string name="error_no_utxos">No coins in wallet</string>
+    <string name="error_amount_too_small">Amount too small</string>
+    <string name="error_no_coin_hours">Not enough coin hours in wallet</string>
+    <string name="error_not_enough_coins">Insufficient balance in wallet</string>
+    <string name="error_encryption_keys">Failure getting encryption keys</string>
+    <string name="error_could_not_read_blockchain_info_from_node">Could not read blockchain info from node</string>
+    <string name="error_could_not_decrypt_seed">Could not decrypt seed</string>
+    <string name="error_scanning_wallet">There was a problem scanning the wallet for funds. You can manually add new addresses to the wallet on the wallet info screen</string>
+
+    <string name="validation_advanced_send_missing_fields">You must provide address, amount, and hours to send</string>
+    <string name="validation_invalid_amount_coins">Invalid amount. Please enter a SKY amount between 0 and %1$f</string>
+    <string name="validation_invalid_amount_hours">Invalid amount. Please enter a number of Coin Hours between 0 and %1$d</string>
+
+    <string name="info">Info</string>
+    <string name="retry_qr_scan">Please try QR scanning again</string>
+
+    <string name="settings_heading">Settings</string>
+    <string name="node_url">Node URL</string>
+    <string name="app_info_heading">App info</string>
+    <string name="node_info_heading">Node info</string>
+
+    <string name="loading">Loading...</string>
+    <string name="sending">Sending...</string>
+    <string name="scanning">Scanning wallet for funds</string>
+
+    <string name="warning">WARNING</string>
+    <string name="delete_wallet">Delete Wallet</string>
+    <string name="delete_warning">Deleting a wallet is permanent. You can only restore it if you have access to its seed words.</string>
+    <string name="delete_it">DELETE IT</string>
+    <string name="keep_it">KEEP IT</string>
+
+    <string name="qr_error">QR Error</string>
+    <string name="new_address_button">New Address</string>
+    <string name="sky_address_hint">SKY Address</string>
+    <string name="sky_amount_hint">Amount</string>
+    <string name="wallet_name_hint">Enter wallet name</string>
+    <string name="wallet_seed_hint">Enter wallet seed</string>
+    <string name="confirm_seed_hint">Confirm wallet seed</string>
+    <string name="new_button">New</string>
+    <string name="load_button">Load</string>
+
+    <string name="url_hint">Http address</string>
+    <string name="send_again_button">Send Again</string>
+
+
+</resources>

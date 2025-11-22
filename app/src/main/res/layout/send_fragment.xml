@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_top"
+    android:orientation="vertical">
+
+    <RelativeLayout android:background="@drawable/header_rounded_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:layout_centerVertical="true"
+            android:textColor="#1E2227"
+            android:textStyle="bold"
+            android:text="@string/send_heading" />
+
+        <Button
+            android:id="@+id/advanced_button"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:textColor="@drawable/sk_button_text_color"
+            android:background="@drawable/sk_button"
+            android:textSize="10sp"
+            android:text="@string/advanced_send" />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/transparentDarkBackground" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp">
+
+            <TextView
+                android:id="@+id/wallet_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="24dp"
+                android:padding="8dp"
+                android:text="@string/send_from"
+                android:textColor="@color/darkText"
+                android:textSize="12sp" />
+
+
+            <Spinner
+                android:id="@+id/wallet_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/wallet_heading"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/rounded_white_rect_with_border"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:id="@+id/address_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/wallet_selector"
+                android:layout_marginTop="24dp"
+                android:padding="8dp"
+                android:text="@string/send_to"
+                android:textColor="@color/darkText"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/address_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_heading"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/address_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    style="@style/editTextWhiteBox"
+                    android:background="@drawable/rounded_white_rect_with_border"
+                    android:hint="@string/sky_address_hint"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:padding="12dp" />
+
+                <ImageView
+                    android:id="@+id/qr_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="8dp"
+                    android:src="@drawable/qr_code_black" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/amount_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/address_container"
+                android:layout_marginTop="24dp"
+                android:padding="8dp"
+                android:text="@string/send_amount"
+                android:textColor="@color/darkText"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/amount_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/amount_heading"
+                android:layout_toStartOf="@+id/fiat_preview"
+                android:layout_marginTop="4dp"
+                style="@style/editTextWhiteBox"
+                android:background="@drawable/rounded_white_rect_with_border"
+                android:hint="@string/sky_amount_hint"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="12dp" />
+
+            <TextView android:id="@+id/fiat_preview"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@+id/amount_heading"
+                android:layout_alignBaseline="@+id/amount_text"
+                android:textSize="12sp"
+                android:textColor="@color/darkGreyText"
+                android:lines="2"
+                android:maxLines="2"
+                android:layout_marginStart="16dp"
+                android:layout_alignParentEnd="true"
+                tools:text="$18.40"/>
+
+            <TextView
+                android:id="@+id/note_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/amount_text"
+                android:layout_marginTop="24dp"
+                android:padding="8dp"
+                android:text="@string/send_note"
+                android:textColor="@color/darkText"
+                android:textSize="12sp" />
+
+
+            <EditText
+                android:id="@+id/note_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/note_heading"
+                android:layout_marginTop="4dp"
+                style="@style/editTextWhiteBox"
+                android:background="@drawable/rounded_white_rect_with_border"
+                android:hint="@string/send_note"
+                android:inputType="text"
+                android:lines="2"
+                android:maxLines="2"
+                android:minLines="1"
+                android:padding="12dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/darkAlmostBlack"
+            android:background="@drawable/button_inactive_gray"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@drawable/sk_button_text_color"
+            android:background="@drawable/sk_button"
+            android:text="@string/send" />
+
+    </LinearLayout>
+
+</LinearLayout>

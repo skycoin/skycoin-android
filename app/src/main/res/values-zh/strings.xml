@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">Skycoin</string>
+
+    <string name="currency_name">Skycoin</string>
+    <string name="currency_short">SKY</string>
+    <string name="hours_name">Coin币时</string>
+    <string name="hours">币时</string>
+
+    <string name="disclaimer_title">免责声明</string>
+    <string name="disclaimer_text">如继续，则表示您了解使用加密货币、基于区块链的软件、Skycoin移动钱包和Skycoin加密货币相关的风险。您了解本产品按原样提供，并同意本产品使用的相关条款和条件。</string>
+    <string name="disclaimer_checkbox">是的，我了解</string>
+    <string name="disclaimer_button">继续</string>
+
+    <string name="seed_reminder_heading">保护好您的种子！</string>
+    <string name="seed_reminder_message">我们想要确保您写下了您的种子并保存在安全的地方。如果您忘记了您的种子，那么将无法恢复您的Skycoin钱包!</string>
+    <string name="seed_reminder_checkbox">我保证，它是安全的。</string>
+
+    <string name="pin_heading_choose">设置一个PIN码</string>
+    <string name="pin_heading_confirm">确认PIN码</string>
+    <string name="pin_heading_enter">输入PIN码</string>
+    <string name="pin_choose_message">此PIN码用来打开钱包。不要忘了；如果忘记，您将无法访问您的移动钱包。</string>
+    <string name="pin_confirm_message">再次输入您的PIN以继续。</string>
+    <string name="pin_mismatch_heading">错!</string>
+    <string name="pin_mismatch_message">PIN不匹配。</string>
+    <string name="pin_mismatch_ok">再次尝试</string>
+    <string name="pin_heading_interrogate">输入您的PIN以访问钱包</string>
+    <string name="pin_request_pin_for_sending">输入您的PIN以完成交易</string>
+    <string name="pin_request_pin">输入您的PIN以继续</string>
+
+    <string name="wallet_heading">创建钱包</string>
+    <string name="wallet_message">如果您还没有钱包，那生成一个种子，然后我们将帮您创建一个。如果您已经有钱包，请在下面输入种子并加载。</string>
+    <string name="wallet_name_heading">钱包名称</string>
+    <string name="wallet_seed_heading">种子</string>
+    <string name="wallet_seed_confirm">确认种子</string>
+    <string name="wallets_list_heading">钱包</string>
+    <string name="wallets_show_seed">输入PIN以查看钱包种子</string>
+
+
+    <string name="wallet_heading_new">新钱包</string>
+    <string name="wallet_heading_load">加载钱包</string>
+
+    <string name="qr_heading">创建二维码</string>
+    <string name="qr_encode_error">一个或多个字段无法正确编码</string>
+
+
+    <string name="send_heading">发送SKY</string>
+    <string name="send_dash">\u2014</string>
+    <string name="send_from">发送自</string>
+    <string name="send_to">发送给</string>
+    <string name="send_amount">金额</string>
+    <string name="send_hours_heading">发送币时</string>
+    <string name="send_note">备注</string>
+    <string name="select_addresses">选择地址</string>
+    <string name="select_utxos">选择UTXOs</string>
+    <string name="pool_selected_sky">选择SKY:</string>
+    <string name="pool_selected_hours">选择币时:</string>
+    <string name="pool_selected_utxo_pool_balance">总计花费SKY:</string>
+    <string name="pool_selected_utxo_pool_hours">总计花费币时:</string>
+    <string name="pool_selected_utxo_pool_hours_burn">燃烧的币时:</string>
+    <string name="pool_selected_utxo_pool_hours_sent">发送的币时:</string>
+    <string name="change_address">找零地址</string>
+    <string name="pool_available_sky">最多可发送SKY:</string>
+    <string name="pool_available_hours">最多可发送币时:</string>
+    <string name="select_wallet">选择钱包</string>
+
+    <string name="tx_sent_sky">发送SKY</string>
+    <string name="tx_sending_sky">正在发送SKY</string>
+    <string name="tx_recv_sky">收到SKY</string>
+
+    <string name="time_nice_later">稍后</string>
+    <string name="time_nice_justnow">现在</string>
+    <string name="time_nice_today">今天</string>
+    <string name="time_nice_yesterday">昨天</string>
+
+    <string name="transactions">交易</string>
+
+    <string name="balance_heading">余额</string>
+    <string name="wallet">钱包</string>
+    <string name="address">地址</string>
+    <string name="id">ID</string>
+    <string name="sent_sky">发送SKY</string>
+    <string name="received_sky">收到SKY</string>
+    <string name="encoded_qr_heading">二维码数据:</string>
+
+    <string name="qr_max_amount">最多13位(包括小数点)</string>
+    <string name="qr_max_hours">最多9位数币时</string>
+    <string name="qr_max_message">最多32个字符的讯息</string>
+    <string name="qr_bad_format">数字输入错误</string>
+
+    <string name="seed">种子</string>
+    <string name="new_seed">新种子</string>
+    <string name="seed_duplicate">已经有钱包使用了该种子</string>
+    <string name="no_seed">您必须提供钱包种子</string>
+    <string name="seed_no_match">种子和确认文本不匹配</string>
+
+    <string name="date">日期</string>
+    <string name="status">状态</string>
+    <string name="from">来自</string>
+    <string name="to">发送至</string>
+    <string name="notes">备注</string>
+    <string name="send">发送</string>
+    <string name="advanced_send">高级发送</string>
+    <string name="cancel">取消</string>
+    <string name="create">创建</string>
+    <string name="next">下一步</string>
+    <string name="update_qr">更新二维码</string>
+    <string name="request_amount">请求的金额</string>
+    <string name="request_amount_hint">待请求的币数</string>
+    <string name="request_hours">请求的币时数</string>
+    <string name="request_hours_hint">待请求的币时数</string>
+    <string name="request_message">讯息</string>
+    <string name="request_message_hint">给发送者的讯息</string>
+
+
+    <string name="go_back">返回</string>
+    <string name="save">保存</string>
+    <string name="restore_default">恢复至默认</string>
+    <string name="query_node">测试节点</string>
+    <string name="change_pin">更改PIN</string>
+    <string name="pin_type_4">4位PIN</string>
+    <string name="pin_type_6">6位PIN</string>
+
+    <string name="advanced_send_info_text_1">步骤1: 选择钱包，然后选择1个或多个用于发送的地址。</string>
+    <string name="advanced_send_info_text_2">步骤2: 选择需要发送的UTXOs。完成交易后， 它们将被消费并且任何剩余的变更将发送到您选择的变更地址。</string>
+    <string name="advanced_send_info_text_3">步骤3: 配置您选择的SKY和币时的发送方式。选择待发送的SKY金额以及发送到的地址。然后选择随之要发送的可用币时数。最后，选择用您的哪个钱包地址接收任何剩余的变更。注：如果您发送所有的币保持无变化，您将自动发送所有的币时数。</string>
+
+    <string name="send_no_hours_warning">您正在发送0币时，确定吗？</string>
+    <string name="keep_no_hours_warning">您正在保留0币时，确定吗？</string>
+
+    <string name="confirmed">已确认</string>
+    <string name="pending">等待确认</string>
+    <string name="ok">OK</string>
+    <string name="copied">复制到剪贴板</string>
+    <string name="copy_tx_to_clipboard">复制txid到剪切板</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+
+    <string name="send_success">发送成功</string>
+    <string name="no_camera_access">无法访问摄像头</string>
+
+    <string name="error">错误</string>
+    <string name="error_send">发送错误</string>
+    <string name="error_retrofit">网络错误。请在设置页面检查节点URL</string>
+    <string name="error_network">网络错误。请检查网络连接。</string>
+    <string name="error_load_node_rules">无法加载节点规则。</string>
+    <string name="error_load_node_rules_warning">无法加载节点规则。燃烧的币时数可能不是最优的。</string>
+    <string name="error_transaction_failed">交易失败</string>
+    <string name="error_too_many_decimals">小数过多，最多允许%1$d</string>
+    <string name="error_no_utxos">钱包中没有币</string>
+    <string name="error_amount_too_small">金额太小</string>
+    <string name="error_no_coin_hours">钱包中币时不足</string>
+    <string name="error_not_enough_coins">钱包中余额不足</string>
+    <string name="error_encryption_keys">获取加密密钥失败</string>
+    <string name="error_could_not_read_blockchain_info_from_node">从节点中无法读取区块链信息</string>
+    <string name="error_could_not_decrypt_seed">无法解密种子</string>
+    <string name="error_scanning_wallet">扫描钱包寻找资金时存在问题。您可以在钱包信息页面上手动向钱包增加新的地址</string>
+
+    <string name="validation_advanced_send_missing_fields">您必须提供发送的地址，金额和币时数</string>
+    <string name="validation_invalid_amount_coins">无效的金额。请输入0到%1$f之间的Skycoin金额</string>
+    <string name="validation_invalid_amount_hours">无效的数量。请输入0到%1$d之间的币时</string>
+
+    <string name="info">信息</string>
+    <string name="retry_qr_scan">请再次尝试扫描二维码</string>
+
+    <string name="settings_heading">设置</string>
+    <string name="node_url">节点URL</string>
+    <string name="app_info_heading">App信息</string>
+    <string name="node_info_heading">节点信息</string>
+
+    <string name="loading">加载中...</string>
+    <string name="sending">发送中...</string>
+    <string name="scanning">扫描钱包寻找资金</string>
+
+    <string name="warning">警告</string>
+    <string name="delete_wallet">删除钱包</string>
+    <string name="delete_warning">删除钱包将是永久删除。您只有在可以访问其种子的情况下才能恢复它。</string>
+    <string name="delete_it">删除</string>
+    <string name="keep_it">保留</string>
+
+    <string name="qr_error">二维码错误</string>
+    <string name="new_address_button">新地址</string>
+    <string name="sky_address_hint">SKY地址</string>
+    <string name="sky_amount_hint">金额</string>
+    <string name="wallet_name_hint">输入钱包名称</string>
+    <string name="wallet_seed_hint">输入钱包种子</string>
+    <string name="confirm_seed_hint">确认钱包种子</string>
+    <string name="new_button">新建</string>
+    <string name="load_button">加载</string>
+    <string name="url_hint">HTTP地址</string>
+
+    <string name="send_again_button">重新发送</string>
+
+    <!-- UPDATED STRINGS TO TRANSLATE FOR NEXT RELEASE
+         See english strings-old.xml for new text. We changed the name from SKY Hours to Coin Hours
+
+    hours_name
+    pool_selected_hours
+    pool_selected_utxo_pool_hours
+    pool_selected_utxo_pool_hours_burn
+    pool_selected_utxo_pool_hours_sent
+    pool_available_hours
+    validation_invalid_amount_hours
+
+            -->
+
+</resources>

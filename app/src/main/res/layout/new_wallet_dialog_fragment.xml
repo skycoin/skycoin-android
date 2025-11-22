@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_top"
+    tools:context=".wallet.NewWalletDialogFragment">
+
+    <TextView
+        android:id="@+id/new_wallet_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/wallet_heading_new"
+        android:background="@drawable/header_rounded_top"
+        android:textColor="#1E2227"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/transparentDarkBackground" />
+
+    <TextView
+        android:id="@+id/wallet_name_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/wallet_name_heading"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:textColor="#1E2227"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/wallet_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        style="@style/editTextWhiteBox"
+        android:background="@drawable/rounded_white_rect_with_border"
+        android:hint="@string/wallet_name_hint"
+        android:inputType="text"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:minLines="1"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/wallet_seed_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="start"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/wallet_seed_heading"
+        android:textColor="#1E2227"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/wallet_seed_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        style="@style/editTextWhiteBox"
+        android:background="@drawable/rounded_white_rect_with_border"
+        android:hint="@string/wallet_seed_hint"
+        android:inputType="textMultiLine"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:lines="3"
+        android:maxLines="5"
+        android:minLines="2"
+        android:padding="12dp" />
+
+
+    <TextView
+        android:id="@+id/wallet_confirm_seed_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="start"
+        android:text="@string/wallet_seed_confirm"
+        android:textColor="#1E2227"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/wallet_seed_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        style="@style/editTextWhiteBox"
+        android:background="@drawable/rounded_white_rect_with_border"
+        android:hint="@string/confirm_seed_hint"
+        android:inputType="textMultiLine"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:lines="3"
+        android:maxLines="5"
+        android:minLines="2"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/new_seed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/message_text"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@drawable/sk_button_text_color"
+        android:background="@drawable/sk_button"
+        android:textSize="12sp"
+        android:text="@string/new_seed" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:textColor="@color/darkAlmostBlack"
+                android:background="@drawable/button_inactive_gray"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/create_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:textColor="@drawable/sk_button_text_color"
+                android:background="@drawable/sk_button"
+                android:text="@string/create" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

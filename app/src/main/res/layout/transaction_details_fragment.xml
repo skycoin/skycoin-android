@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_rounded_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/header_rounded_top"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/sent_sky"
+        android:textColor="@color/darkText"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparentDarkBackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGreyAlmostWhite"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/tx_id_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:background="@color/transparentDarkBackground"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/send_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_yellow_send" />
+
+        <TextView
+            android:id="@+id/amount_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/darkText"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="-25 SKY" />
+
+        <TextView
+            android:id="@+id/fiat_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/darkGreyText"
+            android:textSize="13sp"
+            tools:text="$98.50" />
+
+        <TextView
+            android:id="@+id/hours_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/darkGreyText"
+            android:textSize="12sp"
+            tools:text="-230 SKY Hours" />
+
+        <LinearLayout android:orientation="horizontal"
+            android:id="@+id/burn_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end|center_vertical"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/burn_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="16"
+                android:textColor="@color/darkText"
+                android:textSize="12sp" />
+
+            <ImageView android:id="@+id/burn_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="-2dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/fire_18"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darkerBackgroundDivider" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkerLightBackground"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/date"
+                    android:textColor="@color/darkGreyText"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/date_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/darkText"
+                    android:textSize="12sp"
+                    tools:text="december 12, 2031" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkerBackgroundDivider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkerLightBackground"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/status"
+                    android:textColor="@color/darkGreyText"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/status_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="2dp"
+                    android:layout_toStartOf="@+id/status_label"
+                    android:src="@drawable/check_green" />
+
+                <TextView
+                    android:id="@+id/status_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/darkText"
+                    android:textSize="12sp"
+                    tools:text="Confirmed" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkerBackgroundDivider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/darkerLightBackground"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/from"
+                    android:textColor="@color/darkGreyText"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/from_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/darkText"
+                        android:textSize="12sp"
+                        tools:text="Personal wallet" />
+
+                    <TextView
+                        android:id="@+id/address_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="middle"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/darkGreyText"
+                        android:textSize="12sp"
+                        tools:text="213QWEF3452345RQWREQ23453ERDSFGD" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkerBackgroundDivider" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkerLightBackground"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/to"
+                    android:textColor="@color/darkGreyText"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/to_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="middle"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/darkText"
+                        android:textSize="12sp"
+                        tools:text="Personal wallet" />
+
+                    <TextView
+                        android:id="@+id/to_address_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="middle"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/darkGreyText"
+                        android:textSize="12sp"
+                        tools:text="213QWEF3452345RQWREQ23453ERDSFGD" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkerBackgroundDivider" />
+
+            <LinearLayout android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/footer_rounded_bottom"
+                android:layout_gravity="center_vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/notes"
+                    android:textColor="@color/darkGreyText"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="8dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/notes_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="end"
+                    android:fontFamily="sans-serif"
+                    android:text="-"
+                    android:lines="2"
+                    android:minLines="2"
+                    android:textColor="@color/darkText"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <Button android:id="@+id/send_again_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@drawable/sk_button_text_color"
+                android:background="@drawable/sk_button"
+                android:text="@string/send_again_button"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

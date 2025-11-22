@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="32dp"
+        tools:background="#aaaaff"
+        tools:context=".onboarding.NewWalletFragment">
+
+        <TextView
+            android:id="@+id/wallet_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="@string/wallet_heading"
+            android:textColor="@color/textWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wallet_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:lineSpacingExtra="8sp"
+            android:text="@string/wallet_message"
+            android:textColor="@color/almostWhiteTextTransparent"
+            android:textSize="14sp" />
+
+<!-- style="@style/SwitchCompatStyle" -->
+
+        <RelativeLayout android:layout_height="40dp"
+            android:layout_width="234dp"
+            android:id="@+id/switcher"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/switch_background">
+
+            <View android:id="@+id/slider_background"
+                android:layout_width="112dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/switch_black_indicator"/>
+
+            <TextView android:id="@+id/new_label"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/new_button"/>
+
+
+            <TextView android:id="@+id/load_label"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/lightGreyText"
+                android:gravity="center"
+                android:text="@string/load_button"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/wallet_name_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/wallet_name_heading"
+            android:textColor="@color/almostWhiteText"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/wallet_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="@string/wallet_name_hint"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:minLines="1"
+            android:padding="12dp"
+            style="@style/editTextWhiteBox"/>
+
+        <TextView
+            android:id="@+id/wallet_seed_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="start"
+            android:text="@string/wallet_seed_heading"
+            android:textColor="@color/almostWhiteText"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/wallet_seed_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="@string/wallet_seed_hint"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="5"
+            android:minLines="2"
+            android:padding="12dp"
+            style="@style/editTextWhiteBox"/>
+
+
+        <TextView
+            android:id="@+id/wallet_confirm_seed_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="start"
+            android:text="@string/wallet_seed_confirm"
+            android:textColor="@color/almostWhiteText"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/wallet_seed_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:hint="@string/confirm_seed_hint"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="5"
+            android:minLines="2"
+            android:padding="12dp"
+            style="@style/editTextWhiteBox"/>
+
+        <Button
+            android:id="@+id/create_button"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="32dp"
+            android:enabled="false"
+            android:textColor="@drawable/sk_button_black_text_color"
+            android:background="@drawable/sk_button_black"
+            android:text="@string/create" />
+
+    </LinearLayout>
+</ScrollView>

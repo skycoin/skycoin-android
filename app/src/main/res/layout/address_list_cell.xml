@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/lightGreyAlmostWhite"
+        android:layout_height="70dp">
+
+    <FrameLayout
+        android:background="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout android:id="@+id/main_container"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <TextView android:id="@+id/index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/darkGreyText"
+            android:textSize="13sp"
+            tools:text="1"/>
+
+        <ImageView android:id="@+id/qr_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qr_code_black"/>
+
+        <TextView android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/darkGreyText"
+            android:textSize="13sp"
+            tools:text="Address"/>
+
+        <TextView android:id="@+id/hours"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:textColor="@color/darkGreyText"
+            android:textSize="13sp"
+            tools:text="SKY Hours"/>
+
+        <TextView android:id="@+id/balance"
+            android:layout_marginStart="8dp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkText"
+            android:textSize="13sp"
+            android:gravity="end"
+            tools:text="Balance"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/buttons_container"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#F7F7F7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView android:id="@+id/new_address_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#801E2227"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/icon_new_wallet"
+            android:padding="8dp"
+            android:text="@string/new_address_button"/>
+    </LinearLayout>
+
+    <View android:id="@+id/bottom_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/wallet_list_divider" />
+
+</FrameLayout>

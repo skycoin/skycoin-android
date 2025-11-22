@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialog_rounded_bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_rounded_top"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/disclaimer_title"
+        android:textColor="@color/darkText"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/title"
+        android:background="@color/transparentDarkBackground" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_margin="16dp"
+        android:gravity="start"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/disclaimer_text"
+        android:textColor="@color/darkTextSemiTrans"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/message"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:checked="false"
+        android:text="@string/disclaimer_checkbox" />
+
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/sk_button"
+        android:text="@string/disclaimer_button"
+        android:textColor="@drawable/sk_button_text_color"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

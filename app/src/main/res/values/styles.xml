@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:textViewStyle">@style/DefaultTextViewStyle</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- global style for all textviews -->
+    <style name="DefaultTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:fontFamily">@font/skycoin_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="FullscreenDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textViewStyle">@style/DefaultTextViewStyle</item>
+    </style>
+
+    <style name="editTextWhiteBox" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/whiteEditTextColor</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/skycoin_regular</item>
+        <item name="android:background">@drawable/rounded_white_rect</item>
+    </style>
+
+    <style name="DialogFragmentAnimationTheme" parent="FullscreenDialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation.Window</item>
+    </style>
+
+    <style name="DialogAnimation.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/slide_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_to_bottom</item>
+    </style>
+
+    <style name="SkyAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+    </style>
+
+    <style name="SkyProgressDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textColor">@color/darkText</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+
+</resources>

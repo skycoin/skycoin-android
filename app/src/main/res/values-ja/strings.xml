@@ -1,0 +1,191 @@
+<resources>
+    <string name="app_name">Skycoin</string>
+
+    <string name="currency_name">Skycoin</string>
+    <string name="currency_short">SKY</string>
+    <string name="hours_name">Coin Hours</string>
+    <string name="hours">HOURS</string>
+
+    <string name="disclaimer_title">免責事項</string>
+    <string name="disclaimer_text">続行することにより、仮想通貨とブロックチェーンベースのソフトウェア、このSkycoinモバイルウォレットとSkycoinという仮想通貨の使用に関しての危険性を理解し、同意することになります。ユーザーは、このソフトウェアは「現状有姿のまま」提供されるものであることを承知し、当利用規約に同意されたものとみなされます。 </string>
+    <string name="disclaimer_checkbox">はい、分かりました</string>
+    <string name="disclaimer_button">続行</string>
+
+    <string name="seed_reminder_heading">復元語を確実に保護してください！</string>
+    <string name="seed_reminder_message">復元語をきちんと書き留めて安全な場所に保管してください。復元語を忘れた場合、Skycoinのウォレットを復元することができなくなります。</string>
+    <string name="seed_reminder_checkbox">ちゃんと出来たよ、本当に！</string>
+
+    <string name="pin_heading_choose">PIN番号を設定</string>
+    <string name="pin_heading_confirm">PIN番号を確認</string>
+    <string name="pin_heading_enter">PIN番号を入力してください</string>
+    <string name="pin_choose_message">このPIN番号はウォレットを開くために必要です。忘れてしまったらウォレットを開くことが出来なくなります。それ故に、忘れないようにしてください。</string>
+    <string name="pin_confirm_message">続行するには、もう一度PIN番号を入力してください。</string>
+    <string name="pin_mismatch_heading">おっと！</string>
+    <string name="pin_mismatch_message">入力されたPIN番号が一致しません。</string>
+    <string name="pin_mismatch_ok">確認して、もう一度お試しください。</string>
+    <string name="pin_heading_interrogate">ウォレットを開くために、PIN番号を入力してください</string>
+    <string name="pin_request_pin_for_sending">PIN番号を入力してトランザクションを完了してください</string>
+    <string name="pin_request_pin">続行するには、PIN番号を入力してください</string>
+
+    <string name="wallet_heading">ウォレットを作成</string>
+    <string name="wallet_message">まだウォレットを持っていない場合は、「新規作成」を選択して復元語を生成してください。下の空欄に復元語を貼り付け、そこからウォレットを作成します。すでに復元語をお持ちの場合は、「復元」を選択して、下の空欄に復元語を入力してウォレットを復元します。</string>
+    <string name="wallet_name_heading">名前</string>
+    <string name="wallet_seed_heading">復元語</string>
+    <string name="wallet_seed_confirm">復元語を確認</string>
+    <string name="wallets_list_heading">ウォレット</string>
+    <string name="wallets_show_seed">ウォレットの復元語を表示するには、PIN番号を入力してください</string>
+
+
+    <string name="wallet_heading_new">新規ウォレット</string>
+    <string name="wallet_heading_load">ウォレットを復元</string>
+
+    <string name="qr_heading">QRコードを作成</string>
+    <string name="qr_encode_error">一つ以上のフィールドが正しくエンコードされていませんでした</string>
+
+    <string name="send_heading">SKYを送金する</string>
+    <string name="send_dash">\u2014</string>
+    <string name="send_from">送金元</string>
+    <string name="send_to">送金先</string>
+    <string name="send_amount">金額</string>
+    <string name="send_hours_heading">Coin Hoursを送金する</string>
+    <string name="send_note">メモ</string>
+    <string name="select_addresses">アドレスを選択</string>
+    <string name="select_utxos">UTXOを選択</string>
+    <string name="pool_selected_sky">選択されたSKY：</string>
+    <string name="pool_selected_hours">選択されたCoin Hours：</string>
+    <string name="pool_selected_utxo_pool_balance">送金するSKYの合計金額：</string>
+    <string name="pool_selected_utxo_pool_hours">送金するCoin Hoursの合計金額：</string>
+    <string name="pool_selected_utxo_pool_hours_burn">焼却されるCoin Hours：</string>
+    <string name="pool_selected_utxo_pool_hours_sent">送金されるCoin Hours：</string>
+    <string name="change_address">お釣りのアドレス</string>
+    <string name="pool_available_sky">SKYの全額を送金：</string>
+    <string name="pool_available_hours">Coin Hoursの全額を送金：</string>
+    <string name="select_wallet">ウォレットを選択</string>
+    <string name="tx_sent_sky">送金したSKY</string>
+    <string name="tx_sending_sky">送金中のSKY</string>
+    <string name="tx_recv_sky">受け取ったSKY</string>
+
+    <string name="time_nice_later">後で</string>
+    <string name="time_nice_justnow">たった今</string>
+    <string name="time_nice_today">今日</string>
+    <string name="time_nice_yesterday">昨日</string>
+
+    <string name="transactions">履歴</string>
+
+    <string name="balance_heading">残高</string>
+    <string name="wallet">ウォレット</string>
+    <string name="address">アドレス</string>
+    <string name="id">ID</string>
+    <string name="sent_sky">送金したSKY</string>
+    <string name="received_sky">受け取ったSKY</string>
+    <string name="encoded_qr_heading">QRデータ：</string>
+
+    <string name="qr_max_amount">SKYは最大１３数字（小数点を含む）</string>
+    <string name="qr_max_hours">Hoursは最大９数字</string>
+    <string name="qr_max_message">メモは最大３２文字</string>
+    <string name="qr_bad_format">数値入力が正しくありません</string>
+
+    <string name="seed">復元語</string>
+    <string name="new_seed">新しい復元語</string>
+    <string name="seed_duplicate"> この復元語から作成されたウォレットは既に存在します</string>
+    <string name="no_seed">復元語が必要です</string>
+    <string name="seed_no_match">復元語と確認テキストが一致しません</string>
+
+    <string name="date">日時</string>
+    <string name="status">ステータス</string>
+    <string name="from">送金元</string>
+    <string name="to">送金先</string>
+    <string name="notes">メモ</string>
+    <string name="send">送金</string>
+    <string name="advanced_send">高度な送金</string>
+    <string name="cancel">キャンセル</string>
+    <string name="create">作成</string>
+    <string name="next">次</string>
+    <string name="update_qr">QRコードを更新</string>
+    <string name="request_amount">金額を要求</string>
+    <string name="request_amount_hint">コインの要求額</string>
+    <string name="request_hours">Hoursを要求</string>
+    <string name="request_hours_hint">Hoursの要求額</string>
+    <string name="request_message">メッセージ</string>
+    <string name="request_message_hint">送金者宛のメッセージ</string>
+
+
+    <string name="go_back">戻る</string>
+    <string name="save">保存</string>
+    <string name="restore_default">デフォルトに戻す</string>
+    <string name="query_node">ノードをテスト</string>
+    <string name="change_pin">PIN番号の変更</string>
+    <string name="pin_type_4">４桁のPIN番号</string>
+    <string name="pin_type_6">６桁のPIN番号</string>
+
+    <string name="advanced_send_info_text_1">手順１：ウォレットを選択して、その内から一つ以上の送金元アドレスを選択します。</string>
+    <string name="advanced_send_info_text_2">手順２：どのUTXOを使用するかを選択します。トランザクションを完了する時、そのUTXOは消費されて、残額はあなたが選択したお釣りのアドレスに送金されます。</string>
+    <string name="advanced_send_info_text_3">手順３：選択されたSKYとHoursのプールの送金方法を設定します。送金するSKYの金額と送金先を選択します。次に、使用可能なHoursからSKYと共に送金するHoursの金額を選択します。最後に、残額を受け取るアドレスを選択します。注：すべてのSKYを送金し、残額がない場合は、自動的にすべてのHoursが送金されます。</string>
+
+    <string name="send_no_hours_warning">0 Hoursを送金しようとしていますが、よろしいですか？</string>
+    <string name="keep_no_hours_warning">この後、0 Hoursが残りますが, よろしいですか？</string>
+
+    <string name="confirmed">確認済み</string>
+    <string name="pending">保留中</string>
+    <string name="ok">了解</string>
+    <string name="copied">クリップボードにコピーしました</string>
+    <string name="copy_tx_to_clipboard">TXIDをクリップボードにコピー</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+
+    <string name="send_success">送金成功</string>
+    <string name="no_camera_access">カメラにアクセスできません</string>
+    <string name="error">エラー</string>
+    <string name="error_send">送金エラー</string>
+    <string name="error_retrofit">ネットワークエラー。設定画面でノードURLを確認してください。</string>
+    <string name="error_network">ネットワークエラー。インターネット接続を確認してください。</string>
+    <string name="error_load_node_rules">ノード・ルールを読み込めませんでした。</string>
+    <string name="error_load_node_rules_warning">ノード・ルールを読み込めませんでした。焼却されるHoursの量は最適ではないかもしれません。</string>
+    <string name="error_transaction_failed">送金に失敗しました</string>
+    <string name="error_too_many_decimals">小数が多すぎます。 最大制限は%1$d桁</string>
+    <string name="error_no_utxos">そのウォレットにはコインがありません</string>
+    <string name="error_amount_too_small">金額が小さすぎます</string>
+    <string name="error_no_coin_hours">ウォレットにあるHoursが不十分です</string>
+    <string name="error_not_enough_coins">残高が不足しています</string>
+    <string name="error_encryption_keys">暗号化キーの取得に失敗しました</string>
+    <string name="error_could_not_read_blockchain_info_from_node">ノードからブロックチェーン情報を読み取れませんでした</string>
+    <string name="error_could_not_decrypt_seed">復元語を復号できませんでした</string>
+    <string name="error_scanning_wallet">ウォレットをスキャンし、残高を検出する際に問題が発生しました。ウォレット情報画面で、ウォレットに新規アドレスを手動で追加できます</string>
+
+    <string name="validation_advanced_send_missing_fields">送金する為にアドレス、金額、Hoursを入力する必要があります</string>
+    <string name="validation_invalid_amount_coins">無効な金額です。0から%1$fの間のSKYの金額を入力してください</string>
+    <string name="validation_invalid_amount_hours">無効な金額です。0から%1$dの間のHoursの金額を入力してください</string>
+
+    <string name="info">情報</string>
+    <string name="retry_qr_scan">もう一度QRコードをスキャンしてみてください</string>
+
+    <string name="settings_heading">設定</string>
+    <string name="node_url">ノードURL</string>
+    <string name="app_info_heading">アプリ情報</string>
+    <string name="node_info_heading">ノード情報</string>
+
+    <string name="loading">読み込み中...</string>
+    <string name="sending">送金中...</string>
+    <string name="scanning">ウォレットをスキャンし、残高を検出中..</string>
+
+    <string name="warning">警告</string>
+    <string name="delete_wallet">ウォレットを削除</string>
+    <string name="delete_warning">ウオレットを削除すると、元に戻すことができません。復元語を持っている場合にのみ、復元することができます。</string>
+    <string name="delete_it">はい、削除します</string>
+    <string name="keep_it">いいえ、削除しません</string>
+
+    <string name="qr_error">QRエラー</string>
+    <string name="new_address_button">新規アドレス</string>
+    <string name="sky_address_hint">SKYアドレス</string>
+    <string name="sky_amount_hint">金額</string>
+    <string name="wallet_name_hint">ウォレットの表示名を入力してください</string>
+    <string name="wallet_seed_hint">ウォレットの復元語を入力してください</string>
+    <string name="confirm_seed_hint">復元語を確認してください</string>
+    <string name="new_button">新規作成</string>
+    <string name="load_button">復元</string>
+
+    <string name="url_hint">Http アドレス</string>
+    <string name="send_again_button">再送金</string>
+
+
+</resources>
